@@ -1,0 +1,25 @@
+<html>
+
+<head>
+	<script>
+		
+		function newinfo(){
+
+			url = "http://127.0.0.1:5000/biz?" + "keyw=" + document.getElementById('keyw').value
+			location.href = url;
+		}
+
+	</script>
+</head>
+
+<body>
+<button id = "click" onclick="newinfo()"> click me</button>
+<input type="text" id = "keyw"> keyw
+
+{% if data is defined %}
+<p>{{ data }} </p>
+{% endif %}
+</body>
+
+
+</html>
